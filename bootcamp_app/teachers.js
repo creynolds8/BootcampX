@@ -21,9 +21,9 @@ pool
 )
 .then((res) => {
   console.log('connected');
-  res.rows.forEach((teacher) => {
+  res.rows.forEach((row) => {
     console.log(
-      `${teacher.cohort}: ${teacher.teacher}`
+      `${row.cohort}: ${row.teacher}`
     );
   })
 })
